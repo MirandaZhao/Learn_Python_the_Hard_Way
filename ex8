@@ -1,0 +1,16 @@
+# ex8
+formatter = "{} {} {} {}"
+
+print(formatter.format(1, 2, 3, 4))  # 1 2 3 4
+print(formatter.format("one", "two", "three", "four"))  # one two three four
+print(formatter.format(True, False, False, True))  # True False False True
+print(formatter.format(formatter, formatter, formatter, formatter))  # {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {}
+print(formatter.format(
+    "Try your",
+    "Own text here",
+    "Maybe a poem",
+    "Or a song about fear"
+))  # Try your Own text here Maybe a poem Or a song about fear
+
+# formatter.format(...) --> 取fomatter字符串，.format表示调用函数:执行一个叫format的命令行，给format传递4个参数:将参数传递给format命令，
+# 在formmatter上调用format的结果是一个新字符串，其中{}被4个变量替换掉了，这就是print打印结果。
